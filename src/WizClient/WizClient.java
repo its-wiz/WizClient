@@ -17,6 +17,7 @@ public class WizClient {
 	public static boolean showKeys = false;
 	public static boolean showToggles = false;
 	public static boolean showFPS = true;
+	public static boolean showDuelHUD = true;
 	public static CopyOnWriteArrayList<WizModule> modules = new CopyOnWriteArrayList<WizModule>();
 	
 	
@@ -84,6 +85,12 @@ public class WizClient {
 			showKeys = !showKeys;
 			Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("§7[§bWizClient§7] §bToggled §fshowkeys§b, Enabled§7: §f" + showKeys));
 		}
+		
+		else if (arg1.contains("showduelhud")) {
+			showDuelHUD = !showDuelHUD;
+			Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("§7[§bWizClient§7] §bToggled §fduelhud§b, Enabled§7: §f" + showDuelHUD));
+		}
+		
 		
 		
 		else if (arg1.contains("setmode")) {
