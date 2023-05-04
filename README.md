@@ -36,6 +36,5 @@ Supported Commands:
 Images:
 - HUD (Rainbow)
  ![Alt text](images/Image1.png?raw=true)
-<br>
 - Duel HUD
  ![Alt text](images/Image2.png?raw=true)
