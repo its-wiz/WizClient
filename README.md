@@ -6,9 +6,11 @@ Features:
 - HUD Overlay
 - Enabled Moudles Overlay
 - Rainbow HUD :D
+- Show FPS
 - Keybinding
 - Command System
-
+- Discord Integration
+- Set different mode for modules.
 Modules:
 - Fly (Not Properly Implemented)
 - Sprint (Not Properly Implemented)
