@@ -11,6 +11,7 @@ Features:
 - Command System
 - Discord Integration
 - Set different mode for modules.
+<br>
 Modules:
 - Fly (Not Properly Implemented)
 - Sprint (Not Properly Implemented)
