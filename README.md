@@ -11,12 +11,21 @@ Features:
 - Command System
 - Discord Integration
 - Set different mode for modules.
+
 <br>
 Modules:
 <br>
-- Fly (Not Properly Implemented)
+- Fly 
 <br>
-- Sprint (Not Properly Implemented)
+- Sprint 
+<br>
+- Animations
+<br>
+- NoSlowdown
+<br>
+- Longjump
+<br>
+- Bunnyhop
 
 Supported Commands:
 <br>
