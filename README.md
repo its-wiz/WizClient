@@ -14,6 +14,7 @@ Modules:
 - Sprint (Not Properly Implemented)
 
 Supported Commands:
+.
  ![Alt text](images/cmds.PNG?raw=true)
 
 
