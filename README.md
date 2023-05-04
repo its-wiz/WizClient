@@ -13,7 +13,9 @@ Features:
 - Set different mode for modules.
 <br>
 Modules:
+<br>
 - Fly (Not Properly Implemented)
+<br>
 - Sprint (Not Properly Implemented)
 
 Supported Commands:
