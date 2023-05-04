@@ -6,10 +6,10 @@ import com.WizClient.modules.WizModule;
 
 import net.minecraft.client.Minecraft;
 
-public class Sprint extends WizModule {
+public class Longjump extends WizModule {
 	
-	public Sprint() {
-		super("Sprint", "", false, Keyboard.KEY_G);
+	public Longjump() {
+		super("Longjump", "default", false, Keyboard.KEY_G);
 	}
 	
 	
@@ -19,9 +19,7 @@ public class Sprint extends WizModule {
 	
 	public void OnUpdate() {
 		if (this.toggled) {
-			if (Minecraft.getMinecraft().thePlayer.moveForward != 0) {
-				Minecraft.getMinecraft().thePlayer.setSprinting(true);		
-			}	
+			Minecraft.getMinecraft().thePlayer.jumpMovementFactor = 0.2f;
 		}
 	}
 	

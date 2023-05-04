@@ -3,8 +3,8 @@ package com.WizClient;
 import java.util.ArrayList;
 import java.util.concurrent.*;
 import com.WizClient.modules.*;
+import com.WizClient.modules.Render.Animations;
 import com.WizClient.modules.movement.*;
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.ChatComponentText;
 
@@ -27,7 +27,13 @@ public class WizClient {
 		
 		modules.add(new Fly());
 		modules.add(new Sprint());	
+		modules.add(new Animations());	
+		modules.add(new NoSlowdown());	
+		modules.add(new Longjump());	
+		modules.add(new Bunnyhop());	
 	}
+	
+
 	
 	public static void OnUpdate() {
 		for (WizModule module : modules) { module.OnUpdate(); }
