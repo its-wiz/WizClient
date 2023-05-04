@@ -7,7 +7,7 @@ import com.WizClient.modules.WizModule;
 public class Fly extends WizModule {
 	
 	public Fly() {
-		super("Fly", "Default", false, Keyboard.KEY_F);
+		super("Fly", "default", false, Keyboard.KEY_F);
 	}
 	
 	

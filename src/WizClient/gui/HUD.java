@@ -31,16 +31,17 @@ public class HUD {
 		
 		Gui.drawRect(5,10,150,25, Color.HSBtoRGB(0, 0, 0.2f));	
 		Gui.drawRect(5,6,150,10, getRainbow(seconds, saturation, brightness));	
-		mc.fontRendererObj.drawStringWithShadow("Wiz Client", 10, 13, getRainbow(seconds, saturation, brightness));
-		mc.fontRendererObj.drawStringWithShadow(" §7┃  §f" + mc.thePlayer.getName(), 56, 13, -1);	
+		mc.fontRendererObj.drawStringWithShadow("§lWiz Client ", 10, 13, getRainbow(seconds, saturation, brightness));
+		mc.fontRendererObj.drawStringWithShadow("   §7┃  §f" + mc.thePlayer.getName(), 56, 13, -1);	
 		
-		
-		Gui.drawRect(5,36,75,50, Color.HSBtoRGB(0, 0, 0.2f));	
-		Gui.drawRect(5,32,75,36, getRainbow(seconds, saturation, brightness));
-		mc.fontRendererObj.drawStringWithShadow("FPS:", 10, 39, getRainbow(seconds, saturation, brightness));
-		mc.fontRendererObj.drawStringWithShadow("§f" + mc.getDebugFPS(), 33, 39,-1);
-		
-		mc.fontRendererObj.drawStringWithShadow("Version: " + WizClient.VERSION, 3, sr.getScaledHeight() - 10, getRainbow(seconds, saturation, brightness));	
+		if (WizClient.showFPS) {
+			Gui.drawRect(5,36,75,50, Color.HSBtoRGB(0, 0, 0.2f));	
+			Gui.drawRect(5,32,75,36, getRainbow(seconds, saturation, brightness));
+			mc.fontRendererObj.drawStringWithShadow("FPS:", 10, 39, getRainbow(seconds, saturation, brightness));
+			mc.fontRendererObj.drawStringWithShadow("§f" + mc.getDebugFPS(), 33, 39,-1);
+			
+			mc.fontRendererObj.drawStringWithShadow("Version: " + WizClient.VERSION, 3, sr.getScaledHeight() - 10, getRainbow(seconds, saturation, brightness));		
+		}
 		
 		int count = 0;
 		for (WizModule module : WizClient.modules) {
