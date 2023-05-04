@@ -56,6 +56,11 @@ public class WizClient {
 			Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("§7[§bWizClient§7] §bToggled §fShowFPS§b, Enabled§7: §f" + showKeys));
 		}
 		
+		else if (arg1.contains("toggleduelhud")) {
+			showDuelHUD = !showDuelHUD;
+			Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("§7[§bWizClient§7] §bToggled §fduelhud§b, Enabled§7: §f" + showDuelHUD));
+		}
+		
 		else if (arg1.contains("toggle")) {
 			System.out.println(args[1]);
 			for (WizModule module : modules) {
@@ -86,10 +91,6 @@ public class WizClient {
 			Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("§7[§bWizClient§7] §bToggled §fshowkeys§b, Enabled§7: §f" + showKeys));
 		}
 		
-		else if (arg1.contains("showduelhud")) {
-			showDuelHUD = !showDuelHUD;
-			Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("§7[§bWizClient§7] §bToggled §fduelhud§b, Enabled§7: §f" + showDuelHUD));
-		}
 		
 		
 		
@@ -128,6 +129,7 @@ public class WizClient {
 			Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("  §b6§7. §bmodulelist §7- §fdisplays all modules."));
 			Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("  §b7§8. §bshowtoggles §7- §fdisplays toggle mode for every module upon changing."));
 			Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("  §b7§8. §btogglefps §7- §ftoggles fps display."));
+			Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("  §b7§8. §btoggleduelhud §7- §ftoggles duel hud."));
 		}
 		else {
 			Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("§7[§bWizClient§7] §bInvalid command sequence, §f" + message + "§b if unsure use §f.help"));
