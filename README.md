@@ -19,5 +19,5 @@ Supported Commands:
 
 
 Images:
-- HUD
+- HUD (Rainbow)
  ![Alt text](images/Image1.png?raw=true)
